@@ -6,6 +6,22 @@ from io import BytesIO
 import json
 import os
 import streamlit as st
+html_code = """
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="twitter:card" content="Summary image">
+    <meta name="twitter:site" content="@legalstyleblog">
+    <meta name="twitter:title" content="Worthless Coin!">
+    <meta name="twitter:description" content="A brief description of your app">
+    <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ezgranet/worthlesscoin/img.png">
+</head>
+</html>
+"""
+
+# Inject the meta tags into the app
+st.components.v1.html(html_code, height=0)
+
 
 # Debugging step: print to see if the script is running
 print("Streamlit app is starting...")
