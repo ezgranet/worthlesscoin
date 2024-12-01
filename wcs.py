@@ -10,11 +10,15 @@ html_code = """
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="twitter:card" content="Summary image">
-    <meta name="twitter:site" content="@legalstyleblog">
-    <meta name="twitter:title" content="Worthless Coin!">
-    <meta name="twitter:description" content="A brief description of your app">
-    <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ezgranet/worthlesscoin/img.png">
+<meta content='@legalstyleblog' name='twitter:site'/>
+<meta content='@legalstyleblog' name='twitter:creator'/>
+    <meta content='https://worthlesscoin.streamlit.app' name='twitter:domain'/>
+<meta content='https://cdn.jsdelivr.net/gh/ezgranet/worthlesscoin/img.png' property='twitter:image'/>
+<meta content='summary_large_image' name='twitter:card'/>
+<meta content='https://cdn.jsdelivr.net/gh/ezgranet/worthlesscoin/img.png' name='twitter:image'/>
+
+<meta content='https://cdn.jsdelivr.net/gh/ezgranet/worthlesscoin/img.png' property='og:image'>
+
 </head>
 </html>
 """
