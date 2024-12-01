@@ -136,8 +136,8 @@ quantity = st.number_input("Enter a quantity (1 to 1 trillion)", min_value=1, ma
 counters = load_counters()
 
 # Display current counters
-st.write(f"Total number of times the app has been used: **{counters['total_uses']}**")
-st.write(f"Sum of all quantities entered: **{counters['total_quantity']}**")
+st.write(f"Number of times minting process has been performed: **{counters['total_uses']}**")
+st.write(f"Sum total of circulating WorthlessCoin: ∅ **{counters['total_quantity']}**")
 
 # Generate and Download PDF on Button Click
 if st.button("Mint Coin"):
