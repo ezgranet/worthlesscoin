@@ -157,7 +157,7 @@ counters = load_counters()
 
 # Display current counters
 st.write(f"Number of times minting process has been performed: **{counters['total_uses']}**")
-st.write(f"Sum total of circulating WorthlessCoin: ∅ **{counters['total_quantity']}**")
+st.write(f"Sum total of circulating WorthlessCoin: ∅ **{counters['total_quantity']: ,}**")
 
 # Generate and Download PDF on Button Click
 if st.button("Mint Coin"):
