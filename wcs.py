@@ -3,6 +3,7 @@ from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from io import BytesIO
+import humanize
 import json
 import os
 import streamlit as st
@@ -147,7 +148,11 @@ counters = load_counters()
 
 # Display current counters
 st.write(f"Number of times minting process has been performed: **{counters['total_uses']}**")
-st.write(f"Sum total of circulating WorthlessCoin: ∅ **{counters['total_quantity']}**")
+formatted_number = humanize.intword(counters['total_quantity'])
+
+
+st.write(f"Sum total of circulating WorthlessCoin (numbers): ∅ **{counters['total_quantity']}**")
+st.write(f"Sum total of circulating WorthlessCoin (words): ∅ **{formatted_number}**")
 
 # Generate and Download PDF on Button Click
 if st.button("Mint Coin"):
