@@ -137,16 +137,6 @@ def overlay_text_on_pdf(input_pdf, name, quantity, counters, output_pdf="output.
 
 # Streamlit App
 st.title("WorthlessCoin: a cryptocurrency for everyone!")
-# Additional information
-st.markdown("""
-    ### About
-    - One problem with cryptocurrencies is that the energy required to keep up the blockchain ledger is very inefficient. Many people have tried to fix this with new types of blockchain, but WorthlessCoin, minted by Granet Press Limited (a company registered in England & Wales), takes a different approach! Instead of changing the blockchain, WorthlessCoin dispenses with the need for a ledger, by minting an unlimited quantity for anyone that asks! Thus, anyone can own any quantity of WorthlessCoin! 
-    - WorthlessCoin is one of many worthless cryptocurrencies, but it's the only one that has the honesty to admit it! 
-    - WorthlessCoin also exists to annoy first, the Financial Conduct Authority (UK) over their overbroad definition of 'qualifying cryptoasset' as well as the  (England & Wales) Law Commission over their very silly proposals on the property law status of digital assets. Other legal or regulatory bodies may be annoyed in future too!
-    - To mint WorthlessCoin, enter your name, the quantity of WorthlessCoin you want (integers only) and click MintCoin! A banknote/certificate of title to this utterly meaningless digital asset will be yours. You can then sell this asset to anyone. After selling, you can then get more WorthlessCoin! Unlimited coins, for everyone!
-    - The currency symbol for WorthlessCoin is  the null sign ∅ (U+2205)
-    - If something is broken or you just want to say something, get in touch with me, Elijah Granet, via e-mail [by clicking this link](mailto:&#101;&#100;&#105;&#116;&#111;&#114;&#64;&#108;&#101;&#103;&#97;&#108;&#115;&#116;&#121;&#108;&#101;&#46;&#99;&#111;&#46;&#117;&#107;)	
-    """)
 
 # User Inputs
 name = st.text_input("Enter your name", placeholder="Type your name here...")
@@ -182,3 +172,17 @@ if st.button("Mint Coin"):
             st.error("Failed to generate PDF. Check the logs for details.")
     else:
         st.error("Please provide valid inputs.")
+
+
+
+# Additional information
+st.markdown("""
+    ### About
+    - One problem with cryptocurrencies is that the energy required to keep up the blockchain ledger is very inefficient. Many people have tried to fix this with new types of blockchain, but WorthlessCoin, minted by Granet Press Limited (a company registered in England & Wales), takes a different approach! Instead of changing the blockchain, WorthlessCoin dispenses with the need for a ledger, by minting an unlimited quantity for anyone that asks! Thus, anyone can own any quantity of WorthlessCoin! 
+    - WorthlessCoin is one of many worthless cryptocurrencies, but it's the only one that has the honesty to admit it! 
+    - WorthlessCoin also exists to annoy first, the Financial Conduct Authority (UK) over their overbroad definition of 'qualifying cryptoasset' as well as the  (England & Wales) Law Commission over their very silly proposals on the property law status of digital assets. Other legal or regulatory bodies may be annoyed in future too!
+    - To mint WorthlessCoin, enter your name, the quantity of WorthlessCoin you want (integers only) and click MintCoin! A banknote/certificate of title to this utterly meaningless digital asset will be yours. You can then sell this asset to anyone. After selling, you can then get more WorthlessCoin! Unlimited coins, for everyone!
+    - The currency symbol for WorthlessCoin is  the null sign ∅ (U+2205)
+    - If something is broken or you just want to say something, get in touch with me, Elijah Granet, via e-mail [by clicking this link](mailto:&#101;&#100;&#105;&#116;&#111;&#114;&#64;&#108;&#101;&#103;&#97;&#108;&#115;&#116;&#121;&#108;&#101;&#46;&#99;&#111;&#46;&#117;&#107;)	
+    """)
+
